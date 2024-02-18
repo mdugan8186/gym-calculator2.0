@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gym Percentages and Max Calculator</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Gym Percentages & Max Calculator</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Percentage calculator -->
+      <section>
+        <!-- Input/ percentages -->
+        <form id="percent-form">
+          <h2>Enter Number</h2>
+          <div>
+            <input
+              type="text"
+              name="percent"
+              id="percent-number"
+              placeholder="Enter Number"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn" id="percent-btn">Click Me</button>
+          </div>
+        </form>
+
+        <!-- 40 - 100 -->
+        <div>
+          <h2>Tens</h2>
+          <p>40% <span class="forty clear"></span></p>
+          <p>50% <span class="fifty clear"></span></p>
+          <p>60% <span class="sixty clear"></span></p>
+          <p>70% <span class="seventy clear"></span></p>
+          <p>80% <span class="eighty clear"></span></p>
+          <p>90% <span class="ninety clear"></span></p>
+          <p>100% <span class="one-hundred clear"></span></p>
+        </div>
+
+        <!-- 45 - 95 -->
+        <div>
+          <h2>Fives</h2>
+          <p>45% <span class="forty-five clear"></span></p>
+          <p>55% <span class="fifty-five clear"></span></p>
+          <p>65% <span class="sixty-five clear"></span></p>
+          <p>75% <span class="seventy-five clear"></span></p>
+          <p>85% <span class="eighty-five clear"></span></p>
+          <p>95% <span class="ninety-five clear"></span></p>
+        </div>
+
+        <!-- 105 - 120 -->
+        <div>
+          <h2>Over 100%</h2>
+          <p>105% <span class="hundred-five clear"></span></p>
+          <p>110% <span class="hundred-ten clear"></span></p>
+          <p>115% <span class="hundred-fifteen clear"></span></p>
+          <p>120% <span class="hundred-twenty clear"></span></p>
+        </div>
+
+        <!-- Clear percentages -->
+        <button id="clear-percentages" class="btn">Clear Percentages</button>
+      </section>
+
+      <!-- Max calculator -->
+      <section>
+        <h2>Estimated Max Calculator</h2>
+        <!-- Input/ Max -->
+        <form id="max-form">
+          <div>
+            <input
+              type="text"
+              name="weight"
+              id="max-weight"
+              placeholder="Enter Weight"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="reps"
+              id="max-reps"
+              placeholder="Enter Reps"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn" id="max-btn">Click Me</button>
+          </div>
+        </form>
+
+        <!-- Max Number -->
+        <div>
+          <h2>This is your estimated max</h2>
+          <p>Estimated Max = <span class="est-max"></span></p>
+        </div>
+
+        <!-- Clear Max -->
+        <button id="clear-max" class="btn">Clear Max</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
